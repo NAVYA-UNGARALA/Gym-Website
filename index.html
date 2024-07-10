@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya's Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+    <style>
+        body{
+            font-family: "Roboto Slab", serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('images/abs-1850926_1280.jpg');
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid blue; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+        .mid{
+            display: block;
+            width: 40%;
+            margin: 29px auto;
+            /* border: 2px solid rgb(204, 197, 192); */
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            right: 35px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid rgb(255, 0, 119); */
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            font-family: "Roboto Slab", serif;
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 7px;
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            font-family: "Roboto Slab", serif;
+            border: 2px solid pink;
+            width: 33%;
+            margin: 130px 100px;
+            padding: 60px 60px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .form-grp input{
+            font-family: "Roboto Slab", serif;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: 2px solid grey;
+            margin: 11px auto;   
+            border-radius: 10px;
+        }
+        .container button{
+            margin: 10px auto;
+            width: 58%;
+        }
+        .container h1:hover{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo-1861420_1280.png" alt="">
+            <div>Navya's Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <Button class="btn">Call Us</Button>
+            <Button class="btn">Email Us</Button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="no.php">
+            <div class="form-grp">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter Your Location">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+</html>
